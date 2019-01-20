@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Dairy</string>
+    <string name="log_out">log out</string>
+    <string-array name="list">
+        <item >About Us</item>
+        <item>Contact Us</item>
+        <item>Share With Friends</item>
+        <item>Change Password</item>
+        <item>Log Out</item>
+    </string-array>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBodyBackground"
+    tools:context=".LoginActivity">
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:drawableTop="@drawable/ic_diary"
+            android:layout_marginBottom="70dp"
+            android:text="Save your memories"
+            android:textStyle="italic"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUsername"
+            android:textColorHint="@color/colorHint"
+            app:errorEnabled="true"
+            android:theme="@style/EditTextTheme">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#cac8c8"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/colorTinBottom"
+            android:hint="E-mail"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPassword"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorHint"
+            android:textColorHint="@color/colorHint"
+            app:errorEnabled="true"
+            android:theme="@style/EditTextTheme">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+
+            android:drawablePadding="2dp"
+            android:backgroundTint="@color/colorTinBottom"
+            android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBtnBackground"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorText"
+            android:id="@+id/btnLogin"
+
+            android:text="Login"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create An Account"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:onClick="signup"
+            android:textColor="#f1e9ec"/>
+    </LinearLayout>
+
+</RelativeLayout>

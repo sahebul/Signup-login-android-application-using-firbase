@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_profile_pic"
+            android:textAlignment="center"
+            android:text="Sahebul Islam"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="12dp"
+
+            android:drawableLeft="@drawable/ic_close_envelope"
+            android:text="sahebul@gmail.com"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_smartphone_call"
+            android:drawablePadding="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="+91 9742447516"/>
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:entries="@array/list"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true" >
+        </ListView>
+
+    </LinearLayout>
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btnLogout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:text="@string/log_out"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+</RelativeLayout>
